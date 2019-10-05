@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <title>Jewelery</title>
 </head>
 <body>
@@ -46,10 +47,12 @@
                             </li>
                         </ul>
                     </nav>
+
                     <div>
                         <a class="header__nav-social header__nav-social_tw" href="#"></a>
                         <a class="header__nav-social header__nav-social_fb" href="#"></a>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -103,10 +106,13 @@
             <h2 class="section-title">
                 How does it work?
             </h2>
+
             <p class="section-subtitle">
                 You can ask your question by filling in the form Callback
             </p>
+
             <div class="purchase-sequence__list">
+
                 <div class="purchase-sequence__item purchase-sequence_1">
                     <h4 class="item__title">Select a piece of jewelry that you like.</h4>
                     <p class="item__description item__text">You can choose your size, decoration material (silver, gold)</p>
@@ -133,7 +139,7 @@
                 </div>
 
                 <div class="purchase-sequence__item purchase-sequence_6">
-                    <h4>Wear purchased item with pleasure.</h4>
+                    <h4 class="item__title">Wear purchased item with pleasure.</h4>
                     <p class="item__description item__text">As credit cards, and other convenient for you.</p>
                 </div>
             </div>
@@ -143,19 +149,58 @@
     <section class="slider">
         <div class="container">
             <div class="slider__inner">
-                <div class="slider__image">
-                    <img src="img/slider_image.png" alt="slider_image">
+                <div class="slider__item">
+
+                    <div class="slider__image">
+                        <img src="img/slider_image.png" alt="slider_image">
+                    </div>
+
+                    <div class="slider__description">
+                        <h3 class="section-title description__title">Mercury</h3>
+                        <p class="item__text description__text">
+                            Movie buff Tony Chou (Tony Zhou) published in his Vimeo video review with an
+                            analysis of the demonstration set of SMS and other text messages in modern
+                            cinema.
+                        </p>
+
+                        <a href="#" class="btn-red btn description__button">Learn more</a>
+                    </div>
                 </div>
 
-                <div class="slider__description">
-                    <h3 class="section-title description__title">Mercury</h3>
-                    <p class="item__text description__text">
-                        Movie buff Tony Chou (Tony Zhou) published in his Vimeo video review with an
-                        analysis of the demonstration set of SMS and other text messages in modern
-                        cinema.
-                    </p>
+                <div class="slider__item">
 
-                    <a href="#" class="btn-red btn description__button">Learn more</a>
+                    <div class="slider__image">
+                        <img src="img/slider_image.png" alt="slider_image">
+                    </div>
+
+                    <div class="slider__description">
+                        <h3 class="section-title description__title">Mercury</h3>
+                        <p class="item__text description__text">
+                            Movie buff Tony Chou (Tony Zhou) published in his Vimeo video review with an
+                            analysis of the demonstration set of SMS and other text messages in modern
+                            cinema.
+                        </p>
+
+                        <a href="#" class="btn-red btn description__button">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="slider__item">
+
+                    <div class="slider__image">
+                        <img src="img/slider_image.png" alt="slider_image">
+                    </div>
+
+                    <div class="slider__description">
+                        <h3 class="section-title description__title">Mercury</h3>
+                        <p class="item__text description__text">
+                            Movie buff Tony Chou (Tony Zhou) published in his Vimeo video review with an
+                            analysis of the demonstration set of SMS and other text messages in modern
+                            cinema.
+                        </p>
+
+                        <a href="#" class="btn-red btn description__button">Learn more</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -164,6 +209,7 @@
     <section class="advantages">
         <div class="container">
             <div class="advantages__inner">
+
                 <div class="advantages__title">
                     <h2 class="main-text__title">why choose we?</h2>
                 </div>
@@ -424,6 +470,16 @@
             </div>
         </div>
     </footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="slick/slick.min.js"></script>
+<script>
+    $('.slider__inner').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+</script>
 
 </body>
 </html>

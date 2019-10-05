@@ -275,7 +275,10 @@ body {
 
 /************* PURCHASE SEQUENCE *************/
 
-
+.item__title {
+    display: block;
+    margin-top: 25px;
+}
 
 .purchase-sequence__list {
     margin-top: 100px;
@@ -328,13 +331,17 @@ e.purchase-sequence_6::before {
 }
 
 .slider__inner {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     align-items: center;
-    flex-basis: 50%;
 }
+
 .slider__image {
     margin-right: 80px;
+}
+
+.slider__item {
+    display: flex !important;
 }
 
 .slider__description .description__text {
@@ -349,7 +356,6 @@ e.purchase-sequence_6::before {
 .slider__description .description__title::after {
     margin: 0;
 }
-
 
 /************* ADVANTAGES *************/
 
@@ -502,6 +508,11 @@ e.purchase-sequence_6::before {
     margin-top: 100px;
 }
 
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer__socials {
     align-self: center;
 }
@@ -563,4 +574,43 @@ e.purchase-sequence_6::before {
     font-weight: 300;
     line-height: 24px;
     max-width: 150px;
+}
+
+@media screen and (max-width: 1450px) {
+
+}
+
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (max-width: 991px) {
+    .header__nav-link {
+        padding: 0 15px;
+    }
+    .banner {
+        padding-top: 150px;
+    }
+    .banner__title {
+        font-size: 30px;
+
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .header__nav {
+        display: block;
+    }
+    .header__nav-link {
+        line-height: 120%;
+    }
+    .banner {
+        margin-top: -110px;
+    }
+
+}
+
+@media screen and (max-width: 495px) {
+
 }
