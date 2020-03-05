@@ -314,7 +314,7 @@ body {
 .purchase-sequence_5::before {
     background: url("../img/purchase-sequnce_5.png") no-repeat center;
 }
-e.purchase-sequence_6::before {
+.purchase-sequence_6::before {
     background: url("../img/purchase-sequnce_6.png") no-repeat center
 }
 
@@ -355,6 +355,14 @@ e.purchase-sequence_6::before {
 
 .slider__description .description__title::after {
     margin: 0;
+}
+
+.slick-prev::before {
+    content: "";
+}
+
+.slick-next::before {
+    content: "";
 }
 
 /************* ADVANTAGES *************/
